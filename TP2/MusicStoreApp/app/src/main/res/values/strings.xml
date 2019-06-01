@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">MusicStoreApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to spinner -->
+    <string name="spinner_title">Categoria</string>
+    <string-array name="categoria_array">
+        <item>Instrumento de Corda</item>
+        <item>Instrumento de Percussão</item>
+        <item>Instrumento de Sopro</item>
+        <item>Instrumento de Teclas</item>
+    </string-array>
+    <string name="title_activity_list">ListActivity</string>
+</resources>

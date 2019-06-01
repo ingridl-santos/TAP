@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.CadastroProdutoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:weightSum="1">
+
+        <!-- Campo Nome do produto -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_produto"
+                android:inputType="textAutoComplete"
+                android:hint="Produto"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Campo Descricao do produto-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.20">
+                <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="77dp"
+                    android:id="@+id/input_descricao"
+                    android:inputType="textMultiLine"
+                    android:hint="Descrição"
+                    android:layout_weight="0.25" />
+         </android.support.design.widget.TextInputLayout>
+
+        <!-- Campo categoria do Produto -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_categoria"
+                android:inputType="textAutoComplete"
+                android:hint="Tipo de Instrumento"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Campo Botão -->
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrar"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Cadastrar"/>
+    </LinearLayout>
+</ScrollView>
